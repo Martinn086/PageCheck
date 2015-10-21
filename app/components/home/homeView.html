@@ -1,0 +1,6 @@
+<a href="./index.html#/add-site"><img width="40" height="40" src="assets/img/plus.png" id="add"></a>
+
+<div ng-repeat="page in pages" ng-class="{error: page.code == 302 || page.code == 404 }" class="page-container">
+    <div class="page-url">{{ page.url[1] }}</div>
+    <div class="page-code">{{ page.code }}</div>
+</div>
